@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup"
+import Landing from "./scenes/Landing"
+import Linegradient from "./components/Linegradient"
 
 function App() {
 	const [selectedPage, setSelectedPage] = useState("home")
@@ -28,6 +30,8 @@ function App() {
 					setSelectedPage={setSelectedPage}
 				/>
 			)}
+			<Landing setSelectedPage={setSelectedPage} />
+			<Linegradient />
 		</div>
     </div>
   );
